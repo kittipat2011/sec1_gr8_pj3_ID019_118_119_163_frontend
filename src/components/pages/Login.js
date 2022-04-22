@@ -20,12 +20,17 @@ function Login({setToken}) {
     };
 
     userLogin(loginData).then((res) => {
-      const token = res.data.token;
-      console.log(token);
 
-      sessionStorage.setItem('token',token)
-      alert("Login Success")
-      window.location.reload(false);
+      if(res.data.message === "login successfully."){
+        const token = res.data.token;
+        console.log(token);
+        sessionStorage.setItem('token',token)
+        alert("Login Success")
+        window.location.reload(false);
+      }else{
+        alert("login failed");
+      }
+
     });
   }
   
