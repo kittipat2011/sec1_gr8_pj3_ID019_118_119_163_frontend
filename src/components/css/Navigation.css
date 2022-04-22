@@ -1,0 +1,56 @@
+.Nav-Bar{
+  background:#141e30;
+}
+/* .test .home-T:hover {
+  transition: .3s;
+  background-color: #F16357 ;
+  padding: 0.5em ;
+  border-radius: 18px;
+  transform: scale(1);
+}
+.test .User-T:hover {
+  transition: .3s;
+  background-color: #F16357 ;
+  padding: 0.5m ;
+  border-radius: 18px;
+  transform: scale(1);
+} 
+.test .Song-T:hover {
+  transition: .3s;
+  background-color: #F16357 ;
+  padding: 0.5em ;
+  border-radius: 18px;
+  transform: scale(1);
+}
+.test .Artist-T:hover {
+  transition: .3s;
+  background-color: #F16357 ;
+  padding: 0.5m ;
+  border-radius: 18px;
+  transform: scale(1);
+}  */
+
+.test{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:5px 0;
+  gap: 5px;
+}
+
+.test li{
+  border-radius: 30px;
+  padding:.2px 10px;
+  color:#fff;
+  border:#ccc;
+  transition: 0.5s;
+}
+
+.test  li:hover{
+  background-color:#F16357;
+  transform: scale(1.1);
+}
+
+.Login .btn{
+  background-color: #F16357 
+}

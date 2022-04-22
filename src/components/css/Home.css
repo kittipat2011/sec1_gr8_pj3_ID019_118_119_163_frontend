@@ -1,0 +1,23 @@
+/* User section */
+.User{
+    color: rgb(255, 255, 255); 
+}
+.B-user .btn{
+    background-color: #F16357 
+  }
+/* Artist Section */
+.Artist{
+    color: rgb(255, 255, 255); 
+}
+.B-artist .btn{
+    background-color: #F16357 
+}
+/* Song Section */
+.Song{
+    color: rgb(255, 255, 255); 
+}
+.B-song .btn{
+    background-color: #F16357 
+}
+
+

@@ -1,0 +1,14 @@
+.F{
+    /* background:#141e30; */
+}
+.F .credit{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color:#fff;
+    font-weight: lighter;
+    padding-bottom: 120px ;
+    padding-top: 35px;
+}
+.F .credit span{
+    color:#F16357;
+}
