@@ -11,6 +11,7 @@ function ArtistManage() {
     getAllArtists().then((res) => {
       setArtistList(res.data.data);
     });
+    // eslint-disable-next-line
   }, []);
 
   const onDelete = (id) => {

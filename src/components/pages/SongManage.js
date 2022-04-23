@@ -18,12 +18,13 @@ function SongManage() {
     getAllArtists().then((res) => {
       setArtistList(res.data.data);
     });
+    // eslint-disable-next-line
   }, []);
 
   const getArtistName = (id) =>{
     var artistname = "";
     artistList.forEach(artist => {
-      if(id == artist.ArtistID){
+      if(id === artist.ArtistID){
         artistname = artist.ArtistName;
       }
     });

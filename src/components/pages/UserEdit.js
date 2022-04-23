@@ -28,6 +28,7 @@ function UserEdit() {
       setAge(userData.Age);
       setRole(userData.UserRole);
     });
+    // eslint-disable-next-line
   }, []);
 
   const onUpdate = () => {

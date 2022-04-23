@@ -31,7 +31,7 @@ function SongEdit() {
         getAllArtists().then((res) => {
             setArtistList(res.data.data);
         });
-
+        // eslint-disable-next-line
       }, []);
 
       const onUpdate = () => {

@@ -20,17 +20,18 @@ function Login({setToken}) {
     };
 
     userLogin(loginData).then((res) => {
-
-      if(res.data.message === "login successfully."){
-        const token = res.data.token;
-        console.log(token);
-        sessionStorage.setItem('token',token)
-        alert("Login Success")
-        window.location.reload(false);
+      const role = res.data.data[0].UserRole;
+      if(role === "admin"){
+        if(res.data.message === "login successfully."){
+          const token = res.data.token;
+          console.log(token);
+          sessionStorage.setItem('token',token)
+          alert("Login Success")
+          window.location.reload(false);
+        }
       }else{
         alert("login failed");
       }
-
     });
   }
   

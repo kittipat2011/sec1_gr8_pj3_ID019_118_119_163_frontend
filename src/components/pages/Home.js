@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
 import { getAllUsers } from "../../services/UserService";
@@ -17,7 +17,7 @@ function Home() {
     getAllUsers().then((res) => {
       setUserList(res.data.data);
     });
-
+    
     getAllSongs().then((res) => {
       setSongList(res.data.data);
     });
@@ -25,12 +25,13 @@ function Home() {
     getAllArtists().then((res) => {
       setArtistList(res.data.data);
     });
+    // eslint-disable-next-line
   }, []);
 
   const getArtistName = (id) =>{
     var artistname = "";
     artistList.forEach(artist => {
-      if(id == artist.ArtistID){
+      if(id === artist.ArtistID){
         artistname = artist.ArtistName;
       }
     });

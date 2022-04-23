@@ -11,6 +11,7 @@ function UserManage() {
     getAllUsers().then((res) => {
       setUserList(res.data.data);
     });
+    // eslint-disable-next-line
   }, []);
 
   const onDelete = (id) => {
